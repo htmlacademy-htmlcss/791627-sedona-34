@@ -118,7 +118,7 @@ body {
   background-image: url(../images/background-subscribe.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
-  background-color: rgb(136, 199, 201);
+  background-color: #88c7c9;
   text-align: center;
   color: #ffffff;
 }
@@ -148,7 +148,7 @@ body {
 /* Catalog */
 
 .main-catalog-header {
-  background-color: rgb(83, 151, 168);
+  background-color: #5397a8;
   background-image: url(../images/background-catalog-filter.jpg);
   background-size: 100%;
   background-repeat: no-repeat;
@@ -165,7 +165,6 @@ body {
   font-weight: 700;
   font-size: 20px;
   line-height: 26px;
-  text-transform: capitalize;
 }
 
 .catalog-filter-item {
@@ -241,7 +240,7 @@ body {
 }
 
 .pagination-current {
-  color: #00000;
+  color: #000000;
 }
 
 .product-on-page {
