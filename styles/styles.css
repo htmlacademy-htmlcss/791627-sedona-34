@@ -1,0 +1,257 @@
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 400;
+  src: url(../fonts/ptsans-400.woff2) format("woff2");
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "PT Sans";
+  font-style: normal;
+  font-weight: 700;
+  src: url(../fonts/ptsans-700.woff2) format("woff2");
+  font-display: swap;
+}
+
+body {
+  font-family: "PT Sans", sans-serif;
+  font-size: 16px;
+  line-height: 21px;
+  background-color: #ffffff;
+  color: #000000;
+}
+
+.page-header {
+}
+
+.navigation-link {
+  line-height: 26px;
+  font-weight: 700;
+  text-align: center;
+  font-size: 20px;
+  color: #000000;
+  background-color: #ffffff;
+  text-decoration: none;
+  text-transform: uppercase;
+}
+
+.logo {
+  background-color: #83afad;
+  background-image: url(../images/main-background.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+}
+
+.slogan {
+  font-size: 30px;
+  font-weight: 700;
+  line-height: 36px;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.slogan-desc {
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.advantages-list {
+  text-align: center;
+}
+
+.advantages-item-title,
+.advantages-item-other-title {
+  font-size: 24px;
+  line-height: 28px;
+  font-weight: 700;
+  text-transform: uppercase;
+}
+
+.advantages-item p {
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.advantages-item-1-bg,
+.advantages-item-2 {
+  background-color: #82b3d3;
+}
+
+.housing,
+.souvenir,
+.advantages-item-3,
+.advantages-item-5 {
+  background-color: rgba(131, 179, 211, 0.12);
+}
+
+.advantages-item-4 {
+  background-color: rgba(131, 179, 211, 0.2);
+}
+
+.search-product-subtitle {
+  font-size: 30px;
+  line-height: 36px;
+  font-weight: 700;
+  text-transform: uppercase;
+  text-align: center;
+}
+
+.search-product-desc {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+  text-align: center;
+}
+
+.search-product-link {
+  text-decoration: none;
+  text-transform: uppercase;
+  background-color: #756157;
+  text-align: center;
+  color: #ffffff;
+}
+
+.newsletter {
+  background-image: url(../images/background-subscribe.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-color: #88c7c9;
+  text-align: center;
+  color: #ffffff;
+}
+
+.newsletter-title {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.newsletter-desc {
+  font-weight: 400;
+  font-size: 22px;
+  line-height: 26px;
+}
+
+.contacts-phone {
+  font-size: 40px;
+  line-height: 40px;
+  text-transform: uppercase;
+  text-decoration: none;
+  text-align: center;
+  color: #000000;
+}
+
+/* Catalog */
+
+.main-catalog-header {
+  background-color: #5397a8;
+  background-image: url(../images/background-catalog-filter.jpg);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  color: #ffffff;
+}
+
+.catalog-title {
+  font-weight: 700;
+  font-size: 60px;
+  line-height: 78px;
+}
+
+.catalog-filter-title {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 26px;
+}
+
+.catalog-filter-item {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.catalog-filter-results a {
+  text-decoration: none;
+}
+
+.catalog-filter-results-count {
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 36px;
+  text-transform: uppercase;
+}
+
+.select-control {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.product-card-link {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  color: #000000;
+}
+
+.product-card-type,
+.product-card-price {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.product-card-link-more {
+  background-color: #756157;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.favourites-link {
+  background-color: #82b3d3;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 20px;
+  color: #ffffff;
+  text-transform: uppercase;
+}
+
+.rating {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 20px;
+  color: #333333;
+}
+
+.pagination-link {
+  background-color: #82b3d3;
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 36px;
+  text-align: center;
+  color: #ffffff;
+}
+
+.pagination-current {
+  color: #000000;
+}
+
+.product-on-page {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 21px;
+  color: #333333;
+}
+
+.newsletter-catalog {
+  background-size: 100%;
+  background-repeat: no-repeat;
+  text-align: center;
+  color: #000000;
