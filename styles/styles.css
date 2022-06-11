@@ -42,7 +42,6 @@ body {
 .navigation {
   display: flex;
   margin: 0 70px;
-
 }
 
 .navigation-list {
@@ -115,7 +114,6 @@ body {
   padding: 0;
   display: flex;
   flex-wrap: wrap;
-
 }
 
 .advantages-list-other {
