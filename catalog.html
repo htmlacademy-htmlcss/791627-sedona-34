@@ -132,10 +132,10 @@
             </select>
 
             <div class="btn-group">
-              <button class="btn-group-compact" type="button"><span class="visually-hidden">Компактный
+              <button class="btn-grouping" type="button"><span class="visually-hidden">Компактный
                   вид</span></button>
-              <button class="btn-group-big" type="button"><span class="visually-hidden">Большие фото</span></button>
-              <button class="btn-group-list" type="button"><span class="visually-hidden">Списком</span></button>
+              <button class="btn-grouping" type="button"><span class="visually-hidden">Большие фото</span></button>
+              <button class="btn-grouping" type="button"><span class="visually-hidden">Списком</span></button>
             </div>
           </div>
 
@@ -150,15 +150,17 @@
                 <span class="product-card-type">Гостиница</span>
                 <span class="product-card-price">От 4000 ₽</span>
               </div>
-              <a class="product-card-link-more" href="#">Подробнее</a>
-              <a class="favourites-link" href="#">В избранное</a>
+              <div class="product-card-btns">
+                <a class="product-card-link-more" href="#">Подробнее</a>
+                <a class="favourites-link" href="#">В избранное</a>
+              </div>
               <div class="rating">
-                <ul class="rating-stars">
-                  <li class="star"><img src="" alt=""></li>
-                  <li class="star"><img src="" alt=""></li>
-                  <li class="star"><img src="" alt=""></li>
-                  <li class="star"><img src="" alt=""></li>
-                </ul>
+                <div class="rating-stars">
+                  <img src="#" alt="Рэйтинг 4 звезды из 5.">
+                  <img src="#" alt="">
+                  <img src="#" alt="">
+                  <img src="#" alt="">
+                </div>
                 <span class="rating-text">Рейтинг: 8,5</span>
               </div>
             </li>
@@ -173,15 +175,17 @@
                 <span class="product-card-type">Гостиница</span>
                 <span class="product-card-price">От 5000 ₽</span>
               </div>
-              <a class="product-card-link-more" href="#">Подробнее</a>
-              <a class="favourites-link" href="#">В избранном</a>
+              <div class="product-card-btns">
+                <a class="product-card-link-more" href="#">Подробнее</a>
+                <a class="favourites-link" href="#">В избранном</a>
+              </div>
               <div class="rating">
-                <ul class="rating-stars">
-                  <li class="star"><img src="" alt=""></li>
-                  <li class="star"><img src="" alt=""></li>
-                  <li class="star"><img src="" alt=""></li>
-                  <li class="star"><img src="" alt=""></li>
-                </ul>
+                <div class="rating-stars">
+                  <img src="#" alt="Рэйтинг 4 звезды из 5.">
+                  <img src="#" alt="">
+                  <img src="#" alt="">
+                  <img src="#" alt="">
+                </div>
                 <span class="rating-text">Рейтинг: 9,2</span>
               </div>
             </li>
@@ -196,14 +200,16 @@
                 <span class="product-card-type">Гостиница</span>
                 <span class="product-card-price">От 2500 ₽</span>
               </div>
-              <a class="product-card-link-more" href="#">Подробнее</a>
-              <a class="favourites-link" href="#">В избранное</a>
+              <div class="product-card-btns">
+                <a class="product-card-link-more" href="#">Подробнее</a>
+                <a class="favourites-link" href="#">В избранное</a>
+              </div>
               <div class="rating">
-                <ul class="rating-stars">
-                  <li class="star"><img src="" alt=""></li>
-                  <li class="star"><img src="" alt=""></li>
-                  <li class="star"><img src="" alt=""></li>
-                </ul>
+                <div class="rating-stars">
+                  <img src="#" alt="Рэйтинг 3 звезды из 5.">
+                  <img src="#" alt="">
+                  <img src="#" alt="">
+                </div>
                 <span class="rating-text">Рейтинг: 6,9</span>
               </div>
             </li>
@@ -218,13 +224,15 @@
                 <span class="product-card-type">Гостиница</span>
                 <span class="product-card-price">От 1500 ₽</span>
               </div>
-              <a class="product-card-link-more" href="#">Подробнее</a>
-              <a class="favourites-link" href="#">В избранное</a>
+              <div class="product-card-btns">
+                <a class="product-card-link-more" href="#">Подробнее</a>
+                <a class="favourites-link" href="#">В избранное</a>
+              </div>
               <div class="rating">
-                <ul class="rating-stars">
-                  <li class="star"><img src="" alt=""></li>
-                  <li class="star"><img src="" alt=""></li>
-                </ul>
+                <div class="rating-stars">
+                  <img src="#" alt="Рэйтинг 2 звезды из 5.">
+                  <img src="#" alt="">
+                </div>
                 <span class="rating-text">Рейтинг: 5,0</span>
               </div>
             </li>
@@ -266,12 +274,14 @@
 
       <footer class="page-footer">
         <section class="newsletter-catalog">
-          <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
-          <p class="newsletter-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
-          <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
-            <input class="field" type="email" name="newsletter-email" placeholder="Ваш e-mail">
-            <button class="button newsletter-button" type="submit">Подписаться</button>
-          </form>
+          <div class="newsletter-wrap">
+            <h2 class="newsletter-title">Подпишитесь на рассылку</h2>
+            <p class="newsletter-desc">Только полезная информация и никакого спама, честное бойскаутское!</p>
+            <form class="newsletter-form" action="https://echo.htmlacademy.ru/" method="post">
+              <input class="field" type="email" name="newsletter-email" placeholder="Ваш e-mail">
+              <button class="button newsletter-button" type="submit">Подписаться</button>
+            </form>
+          </div>
         </section>
 
         <div class="footer-container">
