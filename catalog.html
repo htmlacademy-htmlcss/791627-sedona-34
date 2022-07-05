@@ -56,6 +56,7 @@
         <section class="main-catalog">
           <div class="main-catalog-header">
             <h1 class="catalog-title">Гостиницы Седоны</h1>
+
             <ul class="breadcrumbs">
               <li class="breadcrumbs-item home-link">
                 <a class="breadcrumbs-link" href="index.html">
@@ -71,6 +72,7 @@
                 <a class="breadcrumbs-link">Гостиницы</a>
               </li>
             </ul>
+
             <h2 class="visually-hidden">Фильтр параметров гостиниц</h2>
 
             <form class="catalog-filter-form" action="https://echo.htmlacademy.ru/" method="get">
@@ -79,20 +81,23 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="swimming-pool" checked>
-                      Бассейн
+                      <input class="control-input visually-hidden" type="checkbox" name="swimming-pool" checked>
+                      <span class="control-mark"></span>
+                      <span>Бассейн</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="parking" checked>
-                      Парковка
+                      <input class="control-input visually-hidden" type="checkbox" name="parking" checked>
+                      <span class="control-mark"></span>
+                      <span>Парковка</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="checkbox" name="wi-fi">
-                      Wi-Fi
+                      <input class="control-input visually-hidden" type="checkbox" name="wi-fi">
+                      <span class="control-mark"></span>
+                      <span>Wi-Fi</span>
                     </label>
                   </li>
                 </ul>
@@ -103,20 +108,24 @@
                 <ul class="catalog-filter-list">
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="hotel" checked>
-                      Гостиница
+                      <input class="control-input visually-hidden" type="radio" name="product-group" value="hotel"
+                        checked>
+                      <span class="control-mark"></span>
+                      <span>Гостиница</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="motel">
-                      Мотель
+                      <input class="control-input visually-hidden" type="radio" name="product-group" value="motel">
+                      <span class="control-mark"></span>
+                      <span>Мотель</span>
                     </label>
                   </li>
                   <li class="catalog-filter-item">
                     <label class="control">
-                      <input class="control-input" type="radio" name="product-group" value="apartments">
-                      Апартаменты
+                      <input class="control-input visually-hidden" type="radio" name="product-group" value="apartments">
+                      <span class="control-mark"></span>
+                      <span>Апартаменты</span>
                     </label>
                   </li>
                 </ul>
@@ -124,14 +133,28 @@
 
               <fieldset class="catalog-filter-group">
                 <legend class="catalog-filter-title">Стоимсоть, ₽:</legend>
-                <ul class="catalog-filter-list">
-                  <li class="catalog-filter-item">
-                    <input class="price-input" type="text" name="price-min" placeholder="от" value="0">
-                  </li>
-                  <li class="catalog-filter-item">
-                    <input class="price-input" type="text" name="price-max" placeholder="до" value="9000">
-                  </li>
-                </ul>
+                <div class="range-wrapper-inputs">
+                  <input class="price-input-min" type="text" name="price-min" placeholder="от" value="0">
+                  <input class="price-input-max" type="text" name="price-max" placeholder="до" value="9000">
+                </div>
+
+                <div class="range">
+                  <div class="range-scale">
+                    <div class="range-bar" style="width: 227px">
+                      <button class="range-toggle toggle-min">
+                        <span class="visually-hidden">
+                          Изменить минимальную цену.
+                        </span>
+                      </button>
+                      <button class="range-toggle toggle-max">
+                        <span class="visually-hidden">
+                          Изменить максимальную цену.
+                        </span>
+                      </button>
+                    </div>
+                  </div>
+                </div>
+
               </fieldset>
               <div class="catalog-filter-btn">
                 <button class="button-second" type="submit" name="submit">Применить</button>
@@ -145,7 +168,7 @@
           <h2 class="catalog-filter-results-title visually-hidden">Результаты поиска гостиниц</h2>
           <div class="filter-results-container">
             <span class="catalog-filter-results-count">Найдено гостиниц: 38</span>
-            <select class="select-control" name="sorting">
+            <select class="select-control select" name="sorting">
               <option value="cheap">Сначала дешёвые</option>
               <option value="expensive">Сначала дорогие</option>
               <option value="popular">Сначала популярные</option>
@@ -293,7 +316,7 @@
 
             <label class="product-on-page">
               <span>Гостиниц на странице:</span>
-              <select class="product-on-page-count" name="product-on-page-count">
+              <select class="product-on-page-select select" name="product-on-page-count">
                 <option value="4">4</option>
                 <option value="4">5</option>
                 <option value="4">6</option>
