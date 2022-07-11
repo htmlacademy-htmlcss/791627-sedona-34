@@ -19,7 +19,7 @@ html {
 }
 
 body {
-  min-width: 1280px;
+  min-width: 1200px;
   margin: 0;
   display: flex;
   flex-direction: column;
@@ -184,7 +184,6 @@ img {
   align-items: center;
   list-style-type: none;
   flex-wrap: wrap;
-  justify-content: end;
 }
 
 .navigation-logo {
@@ -312,6 +311,7 @@ img {
 }
 
 .slogan-desc {
+  padding: 0 50px;
   font-size: 22px;
   line-height: 26px;
   text-align: center;
@@ -432,6 +432,12 @@ img {
   padding: 103px 85px 102px;
 }
 
+.advantages-item-3-container .advantages-number,
+.advantages-item-4-container .advantages-number,
+.advantages-item-5-container .advantages-number {
+  color: #000000;
+}
+
 .advantages-item-2 {
   display: flex;
   width: 1200px;
@@ -447,10 +453,6 @@ img {
 
 .advantages-item-4 {
   background-color: rgba(131, 179, 211, 0.2);
-}
-
-.advantages-number {
-  margin: 30px 0;
 }
 
 .advantages-desc {
@@ -520,7 +522,7 @@ img {
 
 .newsletter {
   background-image: url("../images/background-subscribe.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   background-color: #88c7c9;
   text-align: center;
@@ -929,6 +931,7 @@ img {
   font-weight: 700;
   font-size: 20px;
   line-height: 36px;
+  border-radius: 10px;
 }
 
 .modal-button:hover {
@@ -953,13 +956,9 @@ img {
 
 .tooltip-toggle {
   border: none;
-  background-color: transparent;
   padding: 0;
   margin: 0;
   display: block;
-}
-
-.tooltip-icon {
   width: 25px;
   height: 25px;
   color: #ffffff;
@@ -967,7 +966,7 @@ img {
   border-radius: 50%;
 }
 
-.tooltip-icon:hover {
+.tooltip-toggle:hover {
   background: #68a2ca;
 }
 
@@ -976,8 +975,8 @@ img {
   display: none;
   box-sizing: border-box;
   margin-top: 15px;
-  left: -110px;
-  padding: 15px 18px 18px 22px;
+  left: -115px;
+  padding: 15px 18px 24px 22px;
   font-weight: 400;
   font-size: 16px;
   line-height: 21px;
@@ -1019,7 +1018,7 @@ img {
   padding: 35px 70px 70px;
   background-color: #5397a8;
   background-image: url("../images/background-catalog-filter.jpg");
-  background-size: 100%;
+  background-size: cover;
   background-repeat: no-repeat;
   color: #ffffff;
 }
@@ -1175,25 +1174,31 @@ img {
 .price-input-min {
   box-sizing: border-box;
   width: 144px;
-  padding: 16px 17px 13px;
+  padding: 12px 17px;
   background-color: transparent;
   border: 2px solid #ffffff;
   border-right-width: 1px;
   border-radius: 4px 0 0 4px;
   color: #ffffff;
   outline: 0;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  line-height: 21px;
 }
 
 .price-input-max {
   box-sizing: border-box;
   width: 144px;
-  padding: 16px 17px 12px;
+  padding: 12px 17px;
   background-color: transparent;
   border: 2px solid #ffffff;
   border-left-width: 1px;
   border-radius: 0 4px 4px 0;
   color: #ffffff;
   outline: 0;
+  font-family: "PT Sans", sans-serif;
+  font-style: normal;
+  line-height: 21px;
 }
 
 .price-min-label {
@@ -1342,6 +1347,7 @@ img {
 .filter-results-container {
   margin: 55px 72px 56px;
   display: flex;
+  align-items: start;
 }
 
 .catalog-filter-results a {
@@ -1350,6 +1356,7 @@ img {
 
 .catalog-filter-results-count {
   margin-top: 7px;
+  max-width: 350px;
   font-weight: 700;
   font-size: 30px;
   line-height: 36px;
@@ -1394,37 +1401,41 @@ img {
 .catalog-filter-select {
   margin-right: auto;
   width: 290px;
+  padding: 12px 20px;
 }
 
 .btn-group {
   display: flex;
+  flex-wrap: wrap;
+  max-width: 170px;
 }
 
 .btn-grouping {
   margin-left: 8px;
+  margin-bottom: 1px;
   width: 48px;
   height: 48px;
   background-color: #ffffff;
   border-radius: 4px;
   cursor: pointer;
+  border: 2px solid #000000;
 }
 
 .btn-grouping:hover {
-  border: 2px solid #000000;
+  border-color: #000000;
 }
 
 .btn-grouping:focus {
-  border: 2px solid #68a2ca;
+  border-color: #68a2ca;
 }
 
 .btn-grouping:active {
-  border: 2px solid #000000;
+  border-color: #000000;
 }
 
 .btn-slideshow,
 .btn-list {
-  border: 2px solid #e5e5e5;
-  border-radius: 4px;
+  border-color:  #e5e5e5;
 }
 
 .product-list {
@@ -1441,6 +1452,7 @@ img {
   display: grid;
   grid-template-columns: 140px 140px;
   gap: 16px 20px;
+  align-items: center;
 }
 
 .product-card-link-image {
