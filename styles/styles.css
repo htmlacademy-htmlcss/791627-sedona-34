@@ -568,22 +568,19 @@ img {
   height: 40px;
   padding: 12px;
   outline: none;
+  color: #83B3D3;
 }
 
-.social-icon {
-  fill: #83b3d3;
+.socials-button:hover {
+  color: #68a2ca;
 }
 
-.social-icon:hover {
-  fill: #68a2ca;
+.socials-button:focus {
+  color: #68a2ca;
 }
 
-.social-icon:focus {
-  fill: #68a2ca;
-}
-
-.social-icon:active {
-  fill: rgba(104, 162, 202, 0.3);
+.socials-button:active {
+  color: rgba(104, 162, 202, 0.3);
 }
 
 .contacts {
@@ -1184,6 +1181,7 @@ img {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   line-height: 21px;
+  font-size: 18px;
 }
 
 .price-input-max {
@@ -1199,6 +1197,7 @@ img {
   font-family: "PT Sans", sans-serif;
   font-style: normal;
   line-height: 21px;
+  font-size: 18px;
 }
 
 .price-min-label {
